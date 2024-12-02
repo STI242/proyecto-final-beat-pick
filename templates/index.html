@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Recommendations</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+
+<body>
+    <header>
+        <img src="/static/logooo.png">
+    </header>
+
+    <main>
+        <section id="user-section">
+            <h1 id="enunciado">¿Buscando ese track que le dé vida a tu fiesta o momento chill? Nosotros lo tenemos. Elige tu género favorito y deja que Beat Pick te lleve a un nuevo nivel musical 🎧</h1>
+            <h2>Select a User and Method</h2>
+            <select id="user-select">
+                <option>Escoge un usuario</option>
+              <!-- Opciones dinámicas -->
+            </select>
+            <label for="genre-select">Selecciona un género para la recomendación:</label>
+            <select id="genre-select">
+                <!-- Opciones dinámicas se llenarán con JavaScript -->
+            </select>
+            <select id="method-select">
+              <option value="average">Average</option>
+              <option value="minimum_misery">Minimum Misery</option>
+              <option value="maximum_pleasure">Maximum Pleasure</option>
+            </select>
+            <button id="get-recommendations">Get Recommendations</button>
+        </section>
+
+        <section id="recommendation-section">
+            <h2>Recommendations</h2>
+
+            <h3>Top 10 Songs 🎵</h3>
+            <ul id="top-songs"></ul>
+
+            <h3>Top 5 Albums 📀</h3>
+            <ul id="top-albums"></ul>
+
+            <h3>Top 5 Artists 🎤</h3>
+            <ul id="top-artists"></ul>
+
+            <h3>Top 5 Similar Tracks 🎼</h3>
+            <ul id="similar-users"></ul>
+          </section>
+    </main>
+
+    <script src="/static/script.js"></script>
+</body>
+
+</html>
